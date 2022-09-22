@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Exercise_1.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="15"
+            Padding="10,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="vowels.jpeg"
+                SemanticProperties.Description="Vowel Selections!"
+                HeightRequest="100"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Vowel Identificator"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Please Input A Letter"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Entry Point of the App"
+                FontSize="18"
+                HorizontalOptions="Center" />
+
+              <Entry x:Name="alphabet" TextChanged="OnTextChanged" />
+
+              <Button Text="Check"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="Center"
+                    x:Name="vowelButton"
+                    Clicked="OnButtonClicked" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
+
